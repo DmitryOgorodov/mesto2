@@ -1,0 +1,5 @@
+.element__title-field {
+    display: flex;
+    align-items: baseline;
+    margin: 25px 21px 26px;
+}
