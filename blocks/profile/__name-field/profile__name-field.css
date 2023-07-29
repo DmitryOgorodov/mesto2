@@ -3,3 +3,9 @@
     align-items: baseline;
     padding: 22px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+    .profile__name-field {
+        width: 100%;
+    }
+}

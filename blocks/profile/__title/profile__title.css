@@ -4,3 +4,11 @@
     font-weight: 500;
     line-height: 48px; /* 114.286% */
 }
+
+@media screen and (max-width: 768px) {
+    .profile__title {
+        margin: 22px 10px 0 34px;
+        font-size: 27px;
+        line-height: normal;
+    }
+}

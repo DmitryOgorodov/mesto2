@@ -4,3 +4,11 @@
     line-height: 32px;
     margin: 16px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .profile__caption {
+        margin: 14px auto 36px;
+        font-size: 14px;
+        line-height: normal;
+    }
+}
