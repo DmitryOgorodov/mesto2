@@ -1,0 +1,5 @@
+.profile__name-field {
+    display: flex;
+    align-items: baseline;
+    padding: 22px 0 0;
+}
