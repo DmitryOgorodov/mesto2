@@ -4,3 +4,10 @@
     grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
     gap: 20px 17px;
 }
+
+@media screen and (max-width: 768px) {
+    .elements {
+        margin-top: 36px;
+        grid-template-columns: repeat(auto-fill, minmax(262px, 1fr)); 
+    }
+}
