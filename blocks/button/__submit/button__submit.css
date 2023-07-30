@@ -1,0 +1,21 @@
+.button__submit {
+    margin: 48px auto 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .button__submit {
+        font-size: 14px;
+        margin: 45px auto 0;
+    }
+}

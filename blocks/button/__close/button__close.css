@@ -1,0 +1,19 @@
+.button__close {
+    position: relative;
+    top: -338px;
+    right: -398px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../../images/Close-Button.svg);
+    background-color: unset;
+    background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .button__close {
+        top: -338px;
+        right: -262px;
+        width: 20px;
+        height: 20px;
+    }
+}
