@@ -72,15 +72,18 @@
         <footer class="footer">
             <div class="footer__copyright">&copy; 2023. Дмитрий Огородов</div>
         </footer>
-        <section class="popup">
-            <div class="form">
-                <h2 class="form__title">Редактировать профиль</h2>
-                <p class="form__field" id="name-field">Жак-Ив Кусто</p>
-                <p class="form__field" id="caption-field">Исследователь океана</p>
-                <button class="button button__submit">Сохранить</button>
-                <button class="button button__close"></button>
-            </div>
+        <section class="popup popup_opened">
+            <form class="form">
+                <fieldset class="form__user-info">
+                    <h2 class="form__heading">Редактировать профиль</h2>
+                    <input type="text" class="form__field" id="name-field" placeholder="Жак-Ив Кусто"></input>
+                    <input type="text" class="form__field" id="caption-field" placeholder="Исследователь океана"></input>
+                    <button type="submit" class="button button__submit">Сохранить</button>
+                    <button type="reset" class="button button__close"></button>
+                </fieldset>
+            </form>
         </section>
+        <script src="./scripts/index.js" defer></script>
     </page>
 </body>
 </html>
