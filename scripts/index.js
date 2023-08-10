@@ -10,23 +10,30 @@ function toglePopup () {
     popup.classList.toggle('popup_opened');
 }
 
+const profileName = document.querySelector('.profile__title');// Выберите элементы, куда должны быть вставлены значения полей
+const profileJob = document.querySelector('.profile__caption');
+
+function formEditHandler (evt) {
+    nameInput.value = profileName.textContent;
+    jobInput.value = profileJob.textContent;
+    toglePopup();
+}
+
 function formSubmitHandler (evt) {
     evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
                                                 // Так мы можем определить свою логику отправки.
                                                 // О том, как это делать, расскажем позже.
 
     // Получите значение полей jobInput и nameInput из свойства value
-
-    const profileName = document.querySelector('.profile__title');// Выберите элементы, куда должны быть вставлены значения полей
-    const profileJob = document.querySelector('.profile__caption');
     
     profileName.textContent = nameInput.value;// Вставьте новые значения с помощью textContent
     profileJob.textContent = jobInput.value;
 }
 
+
 form.addEventListener('submit', formSubmitHandler); 
 
-editButton.addEventListener('click', toglePopup);
+editButton.addEventListener('click', formEditHandler);
 closeButton.addEventListener('click', toglePopup);
 saveButton.addEventListener('click', toglePopup);
 
