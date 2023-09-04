@@ -72,14 +72,25 @@
         <footer class="footer">
             <div class="footer__copyright">&copy; 2023. Дмитрий Огородов</div>
         </footer>
-        <section class="popup popup_opened">
-            <form class="form">
+        <section class="popup popup_opened" id="popupUserInfo">
+            <form class="form" id="formUserInfo">
                 <fieldset class="form__user-info">
                     <h2 class="form__heading">Редактировать профиль</h2>
-                    <input type="text" class="form__field" id="name-field" placeholder="Ваше имя"></input>
-                    <input type="text" class="form__field" id="caption-field" placeholder="Укажите, чем занимаетесь"></input>
+                    <input type="text" class="form__field" id="name-field" placeholder=" Ваше имя"></input>
+                    <input type="text" class="form__field" id="caption-field" placeholder=" Укажите, чем занимаетесь"></input>
                     <button type="submit" class="button button__submit">Сохранить</button>
                     <button type="reset" class="button button__close"></button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="popup popup_opened" id="popupAddImage">
+            <form class="form" id="formAddImage">
+                <fieldset class="form__user-info">
+                    <h2 class="form__heading">Новое место</h2>
+                    <input type="text" class="form__field" id="name-field" placeholder=" Название"></input>
+                    <input type="text" class="form__field" id="caption-field" placeholder=" Ссылка на картинку"></input>
+                    <button type="submit" class="button button__submit">Создать</button>
+                    <button type="reset" class="button button__close" id="resetCard"></button>
                 </fieldset>
             </form>
         </section>
