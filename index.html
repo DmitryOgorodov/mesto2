@@ -25,48 +25,6 @@
                 <button class="button button__add-image"></button>
             </section>
             <section class="elements">
-                <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
-                    <div class="element__title-field">
-                        <h2 class="element__title">Открытие и закрытие попапа</h2>
-                        <button class="button button__like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
-                    <div class="element__title-field">
-                        <h2 class="element__title">Открытие и закрытие попапа</h2>
-                        <button class="button button__like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
-                    <div class="element__title-field">
-                        <h2 class="element__title">Открытие и закрытие попапа</h2>
-                        <button class="button button__like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
-                    <div class="element__title-field">
-                        <h2 class="element__title">Открытие и закрытие попапа</h2>
-                        <button class="button button__like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
-                    <div class="element__title-field">
-                        <h2 class="element__title">Открытие и закрытие попапа</h2>
-                        <button class="button button__like"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
-                    <div class="element__title-field">
-                        <h2 class="element__title">Открытие и закрытие попапа</h2>
-                        <button class="button button__like"></button>
-                    </div>
-                </div>
             </section>
         </main>
         <footer class="footer">
@@ -74,32 +32,40 @@
         </footer>
         <section class="popup popup_opened" id="popupUserInfo">
             <form class="form" id="formUserInfo">
+                <button type="reset" class="button button__close"></button>
                 <fieldset class="form__user-info">
                     <h2 class="form__heading">Редактировать профиль</h2>
                     <input type="text" class="form__field" id="name-field" placeholder=" Ваше имя"></input>
                     <input type="text" class="form__field" id="caption-field" placeholder=" Укажите, чем занимаетесь"></input>
                     <button type="submit" class="button button__submit">Сохранить</button>
-                    <button type="reset" class="button button__close"></button>
                 </fieldset>
             </form>
         </section>
-        <section class="popup popup_opened" id="popupAddImage">
-            <form class="form" id="formAddImage">
+        <section class="popup popup_opened" id="popupAddCard">
+            <form class="form" id="formAddCard">
+                <button type="reset" class="button button__close" id="resetCard"></button>
                 <fieldset class="form__user-info">
                     <h2 class="form__heading">Новое место</h2>
-                    <input type="text" class="form__field" id="name-field" placeholder=" Название"></input>
-                    <input type="text" class="form__field" id="caption-field" placeholder=" Ссылка на картинку"></input>
+                    <input type="text" class="form__field" id="place-field" placeholder=" Название"></input>
+                    <input type="url" class="form__field" id="link-field" placeholder=" Ссылка на картинку"></input>
                     <button type="submit" class="button button__submit">Создать</button>
-                    <button type="reset" class="button button__close" id="resetCard"></button>
                 </fieldset>
             </form>
         </section>
-        <template>
+        <section class="popup popup_opened" id="popupCard">
+            <div class="card">
+                <img class="card__picture" src="">
+                <p class="card__caption"></p>
+                <button class="button button__close" id="closeCard"></button>
+            </div>
+        </section>
+        <template id="cardTemplate">
             <div class="element">
                 <img class="element__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="изображение">
+                <button class="button button__remove"></button>
                 <div class="element__title-field">
                     <h2 class="element__title">Открытие и закрытие попапа</h2>
-                    <button class="button button__like"></button>
+                    <button class="button button__like button_active"></button>
                 </div>
             </div>
         </template>

@@ -1,0 +1,10 @@
+.button__remove {
+    position: absolute;
+    height: 18px;
+    width: 19px;
+    top: 20px;
+    right: 20px;
+    
+    background-color: unset;
+    background-image: url(../../../images/Trash-Button.svg);
+}
