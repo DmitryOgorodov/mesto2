@@ -119,6 +119,8 @@ function createCard () {
     const obj = {};
     obj.name = formAddCard.querySelector('#place-field').value,
     obj.link = formAddCard.querySelector('#link-field').value
+    formAddCard.querySelector('#place-field').value = ""
+    obj.link = formAddCard.querySelector('#link-field').value = ""
     newCard.pop()
     newCard.push(obj)
 }
@@ -133,8 +135,7 @@ function submitCard (evt) {
 formAddCard.addEventListener('submit', submitCard)
 
 /**
- * Открытие попапа с картинкой */
-
+ * закрытие попапа с картинкой */
 
 document.querySelector('#closeCard').addEventListener('click', function () {
     document.querySelector('#popupCard').classList.toggle('popup_opened')
